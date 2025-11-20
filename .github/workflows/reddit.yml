@@ -5,6 +5,9 @@ on:
     - cron: "*/5 * * * *"   # ajaa 5 minuutin välein
   workflow_dispatch:        # manuaalinen käynnistys
 
+permissions:
+  contents: write
+
 jobs:
   run-bot:
     runs-on: ubuntu-latest
