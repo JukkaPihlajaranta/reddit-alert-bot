@@ -5,7 +5,7 @@ import smtplib
 from email.mime.text import MIMEText
 
 RSS_URL = "https://www.reddit.com/r/survivalgaming/new/.rss"
-KEYWORDS = ["season", "realistic", "primitive"]
+KEYWORDS = ["seasons", "realistic", "primitive", "bushcraft", "campfire", "foraging", "realism", "wilderness", "solitude"]
 PICKLE_FILE = "seen.pkl"
 
 EMAIL_ADDRESS = os.environ.get("EMAIL_ADDRESS")
@@ -55,3 +55,4 @@ with open(PICKLE_FILE, "wb") as f:
     pickle.dump(seen_posts, f)
 
 print("Done")
+
