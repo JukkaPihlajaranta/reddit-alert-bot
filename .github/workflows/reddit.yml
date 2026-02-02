@@ -2,7 +2,7 @@ name: Reddit Alert Bot
 
 on:
   schedule:
-    - cron: "*/5 * * * *"   # ajaa 5 minuutin välein
+    - cron: "*/15 * * * *"   # ajaa 15 minuutin välein
   workflow_dispatch:        # manuaalinen käynnistys
 
 permissions:
